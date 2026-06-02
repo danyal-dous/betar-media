@@ -13,9 +13,9 @@ export default function Footer() {
             <Image
               src="/logo.png"
               alt="Betar Media"
-              width={140}
-              height={56}
-              className="h-10 w-auto"
+              width={200}
+              height={80}
+              className="h-14 w-auto"
             />
             <p className="text-[#F5F0E8]/30 text-xs mt-2">Western Sydney&apos;s Podcast & Video Studio</p>
           </div>

@@ -33,9 +33,9 @@ export default function Nav() {
           <Image
             src="/logo.png"
             alt="Betar Media"
-            width={140}
-            height={56}
-            className="h-12 w-auto"
+            width={200}
+            height={80}
+            className="h-16 w-auto"
             priority
           />
         </a>

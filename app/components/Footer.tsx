@@ -1,4 +1,5 @@
 import { Share2, ExternalLink, Link } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -9,10 +10,14 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo */}
           <div>
-            <span className="text-xl font-black text-[#F5F0E8] tracking-tight">
-              BETAR<span className="text-[#D4A853]">MEDIA</span>
-            </span>
-            <p className="text-[#F5F0E8]/30 text-xs mt-1">Western Sydney&apos;s Podcast & Video Studio</p>
+            <Image
+              src="/logo.png"
+              alt="Betar Media"
+              width={140}
+              height={56}
+              className="h-10 w-auto"
+            />
+            <p className="text-[#F5F0E8]/30 text-xs mt-2">Western Sydney&apos;s Podcast & Video Studio</p>
           </div>
 
           {/* Nav links */}

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const links = [
   { label: "Services", href: "#services" },
@@ -28,10 +29,15 @@ export default function Nav() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 group">
-          <span className="text-xl font-bold tracking-tight text-[#F5F0E8]">
-            BETAR<span className="text-[#D4A853]">MEDIA</span>
-          </span>
+        <a href="#" className="flex items-center">
+          <Image
+            src="/logo.png"
+            alt="Betar Media"
+            width={140}
+            height={56}
+            className="h-12 w-auto"
+            priority
+          />
         </a>
 
         {/* Desktop nav */}

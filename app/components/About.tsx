@@ -1,4 +1,5 @@
 import { CheckCircle2 } from "lucide-react";
+import Image from "next/image";
 
 const credentials = [
   "300+ podcast episodes produced",
@@ -19,17 +20,16 @@ export default function About() {
           {/* Left: visual block */}
           <div className="relative">
             <div className="aspect-[4/5] bg-[#111111] rounded-2xl border border-[#1A1A1A] overflow-hidden relative">
-              {/* Placeholder for Nick's photo — gradient bg with name */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A] via-[#111111] to-[#0A0A0A] flex flex-col items-center justify-center gap-4">
-                <div className="w-32 h-32 rounded-full bg-[#D4A853]/10 border-2 border-[#D4A853]/40 flex items-center justify-center">
-                  <span className="text-5xl font-black text-[#D4A853]">NB</span>
-                </div>
-                <div className="text-center">
-                  <p className="text-[#F5F0E8] font-bold text-xl">Nick Betar</p>
-                  <p className="text-[#F5F0E8]/40 text-sm">Founder, Betar Media</p>
-                </div>
-              </div>
-              {/* Gold corner accent */}
+              <Image
+                src="/nick.png"
+                alt="Nick Betar — Founder, Betar Media"
+                fill
+                className="object-cover object-top"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              {/* Subtle bottom gradient so name badge sits cleanly */}
+              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0A0A0A]/70 to-transparent pointer-events-none" />
+              {/* Gold corner accents */}
               <div className="absolute top-0 right-0 w-24 h-24 border-t-2 border-r-2 border-[#D4A853]/40 rounded-tr-2xl" />
               <div className="absolute bottom-0 left-0 w-24 h-24 border-b-2 border-l-2 border-[#D4A853]/40 rounded-bl-2xl" />
             </div>

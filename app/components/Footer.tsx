@@ -49,13 +49,16 @@ export default function Footer() {
 
           {/* Col 1: Brand */}
           <div className="flex flex-col gap-4">
-            <Image
-              src="/logo-cropped.png"
-              alt="Betar Media"
-              width={374}
-              height={152}
-              className="h-10 w-auto"
-            />
+            <div className="w-fit">
+              <Image
+                src="/logo-cropped.png"
+                alt="Betar Media"
+                width={374}
+                height={152}
+                className="h-10 w-auto"
+                style={{ width: "auto" }}
+              />
+            </div>
             <p className="text-[#F5F0E8]/50 text-sm leading-relaxed max-w-xs">
               Western Sydney&apos;s mobile podcast and video production studio. We come to you.
             </p>

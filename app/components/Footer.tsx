@@ -11,11 +11,11 @@ export default function Footer() {
           {/* Logo */}
           <div>
             <Image
-              src="/logo.png"
+              src="/logo-cropped.png"
               alt="Betar Media"
-              width={200}
-              height={80}
-              className="h-14 w-auto"
+              width={374}
+              height={152}
+              className="h-10 w-auto"
             />
             <p className="text-[#F5F0E8]/30 text-xs mt-2">Western Sydney&apos;s Podcast & Video Studio</p>
           </div>

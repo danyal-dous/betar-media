@@ -31,11 +31,11 @@ export default function Nav() {
         {/* Logo */}
         <a href="#" className="flex items-center">
           <Image
-            src="/logo.png"
+            src="/logo-cropped.png"
             alt="Betar Media"
-            width={200}
-            height={80}
-            className="h-16 w-auto"
+            width={374}
+            height={152}
+            className="h-10 w-auto"
             priority
           />
         </a>

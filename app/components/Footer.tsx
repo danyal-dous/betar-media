@@ -73,7 +73,15 @@ export default function Footer() {
             &copy; {year} Betar Media. All rights reserved.
           </p>
           <p className="text-xs text-[#F5F0E8]/20">
-            Based in Western Sydney, NSW, Australia
+            Website by{" "}
+            <a
+              href="https://itechelp.com.au"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#F5F0E8]/40 hover:text-[#D4A853] transition-colors duration-200"
+            >
+              iTech Help
+            </a>
           </p>
         </div>
       </div>
